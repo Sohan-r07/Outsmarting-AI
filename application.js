@@ -21,6 +21,8 @@ const sendButton = document.getElementById("sendbtn");
 const Inputpasskey = document.getElementById("secretinput");
 const secretBtn = document.getElementById("answerbtn");
 const outputresult = document.getElementById("result");
+const popup = document.getElementById("finalscreen");
+const popupclosebtn = document.getElementById("popup-close");
 
 
 async function initEngine() {
@@ -80,11 +82,17 @@ secretBtn.addEventListener("click", async () => {
     if (hash==TARGET_SECRET_HASH) {
         outputresult.style.color = "#00FFA3";
         outputresult.innerText = "Congratulation! You have Outsmarted the AI Model, Time to brag about it now 😎";
+        popup.classList.remove("hidden");
     } else {
         outputresult.style.color = "#FF3366";
         outputresult.innerText = "Incorrect Passkey, Try again!";
     }
 });
+
+popupclosebtn.addEventListener("click", () => {
+    popup.classList.add("hidden");
+    location.reload();
+})
 
 function appendMessage(text, type) {
     const div = document.createElement("div");
@@ -100,6 +108,7 @@ function toggleInputs(status) {
     sendButton.disabled = !status;
     secretBtn.disabled = !status;
 }
+
 
 sendButton.addEventListener("click", sendHandler);
 inputbyuser.addEventListener("keydown", (e) => { if (e.key == "Enter") sendHandler(); });

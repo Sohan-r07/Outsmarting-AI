@@ -9,7 +9,7 @@ body {
     background-color: #08090d;
     color: #E2E870;
     display: flex;
-    align-items: centre;
+    align-items: center;
     justify-content: center;
     padding: 0.5rem;
 }
@@ -83,7 +83,7 @@ h1 {
 .msg.ai {
     align-self: flex-start;
     background: #141923;
-    border: 1px solid var(--border);
+    border: 1px solid rgba(255, 255, 255, 0.08);
     padding: 2px 5px;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -92,14 +92,14 @@ h1 {
 .msg.system {
     align-self: center;
     background: transparent;
-    color: var(--text-muted);
+    color: #64748B;
     font-size: 0.8rem;
-    border: 1px dashed var(--border);
+    border: 1px dashed rgba(61, 51, 51, 0.08);
     line-height: 15px;
 }
 
 .input-group {
-    flex: 1;
+    display: flex;
     background: #0b0e14;
     border: 1px solid rgba(255, 255, 255, 0.08);
     color: #FFF;
@@ -162,4 +162,49 @@ button.primarybtn:hover {
     font-size: 1rem;
     margin-bottom: 10px;
     color: #E2E870;
+}
+
+.resultoverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 78vw;
+    height: 97vh;
+    background: rgba(4,6,10,0.85);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.resultoverlay.hidden {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+
+}
+
+.resultcard {
+    background: #0f141d;
+    border: 1px solid #00ffa3;
+    box-shadow: 0 0 35px rgba(0, 255, 163, 0.3);
+    padding: 2rem;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+    animation: modalPop 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.resultcard h2 {
+    color: #c5c6c7;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+@keyframes modalPop {
+    from { transform: scale(0.85); opacity: 0;}
+    to { transform: scale(1); opacity: 1;}
 }
