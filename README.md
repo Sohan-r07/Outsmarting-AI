@@ -1,4 +1,5 @@
 # Outsmarting-AI
+
 This is a simple game to test your Prompt Injection skills and see if you really can outsmart a LLM model.
 
 ![Hack Club Stardance](https://img.shields.io/badge/Hack_Club-Stardance-EC3750?style=for-the-badge)
@@ -11,7 +12,9 @@ Your objective is to use your prompt to trick or convince the LLM to give you th
 Try to make use of different types of roleplaying, illusions or prompt injection to support you in this.
 
 
+
 **Features:**
+
 
 **1.Local LLM:** The website runs a small 1.5B parameteer LLM model locally on your machine and hence there is no API or other cloud requirements. It also means that the website can run fully offline too!
 
@@ -19,11 +22,16 @@ Try to make use of different types of roleplaying, illusions or prompt injection
 
 **3.Sleek Modern UI:** The website has a minimalistic sleek UI to help the users interact with the Website easily and avoid any unnecessarry bugs or issues.
 
-**4.Zero Backend:**Uses a zero backend Client-end execution for the whole site using web-llm and WebGPU
+**4.Zero Backend:** Uses a zero backend Client-end execution for the whole site using web-llm and WebGPU
+
+
 
 **How to Use:**
 
+
 Feel free to visit the github pages link provided with the repository to go to the website and try it out for yourself. Have a great time!
+
+
 
 **Tips from the creator:**
 
@@ -38,6 +46,8 @@ The model is pretty dumb as its only 1.5B parameters but should be a good starti
 The whole point is to trying and be creative and give the LLM something that it does not expect or has a straightforward answer to.
 Good luck experimenting.
 
+
+
 **Project structure:**
 
 ```bash
@@ -48,7 +58,10 @@ Outsmarting-AI
 |--->application.js #Handles the whole Website and the LLM model including the dynamic text box.
 ```
 
+
+
 **Important:**
+
 This project has been made as a part of the **HackClub Stardance** program.
 This project does not promote any sort of cybercrime in relation to LLMs or otherwise. This is strictly made by me for 
 **Educational Purposes** to educate people about the way bad actors could potentially misuse LLM models and AI agents that may have access to sensitive information.
