@@ -4,6 +4,10 @@ This is a simple game to test your Prompt Injection skills and see if you really
 
 ![Hack Club Stardance](https://img.shields.io/badge/Hack_Club-Stardance-EC3750?style=for-the-badge)
 
+The website can be accessed here: 
+
+https://sohan-r07.github.io/Outsmarting-AI/
+
 **OBJECTIVE:**
 
 The LLM has been provided with a *secret phrase* in its prompt. It is also instructed explicitly not to reveal this secret phrase to any user. 
