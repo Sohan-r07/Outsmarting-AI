@@ -1,7 +1,7 @@
 # Outsmarting-AI
 This is a simple game to test your Prompt Injection skills and see if you really can outsmart a LLM model.
 
-![Hack Club Stardance](https://img.shields.io/badge/Hack_Club-Stardance-EC3750?style=for-the-badge)
+
 
 **OBJECTIVE:**
 
