@@ -20,8 +20,7 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 15px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(10px);
-    width: 75%;
+    width: 100%;
 }
 
 header {
@@ -58,7 +57,7 @@ h1 {
     margin-bottom: 15px;
     flex-direction: column;
     overflow-y: auto;
-    height: 500px;
+    height: 450px;
     scrollbar-color: rgba(175, 177, 177, 0.3);
     
 }

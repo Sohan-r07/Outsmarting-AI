@@ -70,3 +70,4 @@ This project has been made as a part of the **HackClub Stardance** program.
 This project does not promote any sort of cybercrime in relation to LLMs or otherwise. This is strictly made by me for 
 **Educational Purposes** to educate people about the way bad actors could potentially misuse LLM models and AI agents that may have access to sensitive information.
 This is a demonstration of how a LLM model with model sensitive data and clear instructions to not reveal it could be tricked into revealing such info.
+**Also the ReadMe is completely written by me and not by any AI. I know that its good but come on.**
