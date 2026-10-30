@@ -80,11 +80,11 @@ async function sha256(str) {
 secretBtn.addEventListener("click", async () => {
     const hash = await sha256(Inputpasskey.value);
     if (hash==TARGET_SECRET_HASH) {
-        outputresult.style.color = "#00FFA3";
+        outputresult.style.color = "#f2f8f6";
         outputresult.innerText = "Congratulation! You have Outsmarted the AI Model, Time to brag about it now 😎";
         popup.classList.remove("hidden");
     } else {
-        outputresult.style.color = "#FF3366";
+        outputresult.style.color = "#fc0000";
         outputresult.innerText = "Incorrect Passkey, Try again!";
     }
 });
