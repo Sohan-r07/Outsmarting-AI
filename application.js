@@ -26,20 +26,20 @@ const popupclosebtn = document.getElementById("popup-close");
 
 
 async function initEngine() {
-    appendMessage("System Ready. Ready to  go!", "system");
+    appendMessage(" ", "system");
     
 
     try {
         engine = await webllm.CreateMLCEngine(MODEL_NAME, {
             initProgressCallback: (report) => {
-                statusBar.innerText = `Loading LLM model, Think about how to outsmart it!`;
+                statusBar.innerText = `Loading LLM model, may take 2 - 5 minutes`;
 
             }
         });
         statusBar.innerText = "LLM is ready. Good Luck!";
         toggleInputs(true);
     } catch (err) {
-        statusBar.innerText = "Error: Failed to load LLM. Check Browser Compatibility";
+        statusBar.innerText = "Error: Failed to load LLM. Check Browser Compatibility, try a different browser";
         console.error(err);
     }
     
@@ -54,7 +54,7 @@ async function sendHandler() {
     toggleInputs(false);
 
     chathistory.push({role: "user", content: text});
-    const aimsg = appendMessage("Thinking...", "ai");
+    const aimsg = appendMessage("Thinking... this might take some time based on your PC (usually a minute)", "ai");
 
     try {
         const reply = await engine.chat.completions.create({messages: chathistory, temperature: 0.15, max_tokens: 500});

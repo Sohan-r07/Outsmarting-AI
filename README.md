@@ -1,6 +1,9 @@
 # Outsmarting-AI
 
 This is a simple game to test your Prompt Injection skills and see if you really can outsmart a LLM model.
+The LLM Model loads locally so please expect to wait 2-5 minutes for it to load the first time.
+Also the response generation too takes a bit of time based on your PC specs but it usually takes about a minute or so.
+Please be Patient with the website and application. I hope you like it.
 
 
 
@@ -17,17 +20,12 @@ Try to make use of different types of roleplaying, illusions or prompt injection
 
 
 
-**Features:**
+**Features and notes about the Website:**
 
 
-**1.Local LLM:** The website runs a small 1.5B parameteer LLM model locally on your machine and hence there is no API or other cloud requirements. It also means that the website can run fully offline too!
+**1.Local LLM Model:** The website runs a small 1.5B parameteer LLM model locally on your machine and hence there is no API or other cloud requirements. It also means that the website can run fully offline too!
 
 **2.SHA256 Encryption:** The Javascript uses a SHA256 encryption to verify the Passkey so that users can not just cheat the website by using the inspect tab instead of actually trying to outsmart the LLM model. A basic but good anticheat system.
-
-**3.Sleek Modern UI:** The website has a minimalistic sleek UI to help the users interact with the Website easily and avoid any unnecessarry bugs or issues.
-
-**4.Zero Backend:** Uses a zero backend Client-end execution for the whole site using web-llm and WebGPU
-
 
 
 **How to Use:**
